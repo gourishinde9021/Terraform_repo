@@ -1,1 +1,1 @@
-instancetype="t3.medium"
+#instancetype="t3.medium"

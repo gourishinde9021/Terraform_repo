@@ -6,4 +6,4 @@ Using external variable file :
 
    terraform apply -var-file="prod.tfvars"
 
-
+Added variable list in variables.tf
