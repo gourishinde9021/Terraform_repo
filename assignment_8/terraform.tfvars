@@ -1,2 +1,2 @@
-istest = false
+istest = true
 
