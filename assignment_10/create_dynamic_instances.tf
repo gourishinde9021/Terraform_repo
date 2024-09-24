@@ -1,5 +1,5 @@
 variable "instance_names" {
-	default = ["web", "dev", "test"]
+  default = ["web", "dev", "test"]
 }
 
 resource "aws_instance" "prod" {
