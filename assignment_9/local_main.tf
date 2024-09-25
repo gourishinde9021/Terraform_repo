@@ -1,10 +1,10 @@
 locals {
-	common_tags = {
-		owner	= "DevOpsTeam"
-		service	= "backend"
-		company	= "Google"
-		Name	= "Gouri"
-	}
+  common_tags = {
+    owner   = "DevOpsTeam"
+    service = "backend"
+    company = "Google"
+    Name    = "Gouri"
+  }
 }
 
 resource "aws_instance" "web" {
@@ -17,7 +17,7 @@ resource "aws_instance" "web" {
 resource "aws_ebs_volume" "ebs_volume" {
   availability_zone = "ap-southeast-1b"
   size              = 8
-  tags = local.common_tags
+  tags              = local.common_tags
 }
 
 resource "aws_volume_attachment" "ebs_att" {

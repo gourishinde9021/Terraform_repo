@@ -8,6 +8,7 @@ TF_LOG Options:
 
 
 To Set debug logs
+
     export TF_LOG=DEBUG
 
 To unset TF_LOG
