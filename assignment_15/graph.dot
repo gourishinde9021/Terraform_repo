@@ -1,0 +1,19 @@
+digraph G {
+  rankdir = "RL";
+  node [shape = rect, fontname = "sans-serif"];
+  subgraph "cluster_module.ec2_instance" {
+    label = "module.ec2_instance"
+    fontname = "sans-serif"
+    "module.ec2_instance.aws_instance.web" [label="aws_instance.web"];
+  }
+  subgraph "cluster_module.iam_user" {
+    label = "module.iam_user"
+    fontname = "sans-serif"
+    "module.iam_user.aws_iam_user.user1" [label="aws_iam_user.user1"];
+  }
+  subgraph "cluster_module.s3_bucket" {
+    label = "module.s3_bucket"
+    fontname = "sans-serif"
+    "module.s3_bucket.aws_s3_bucket.s3_bucket_example" [label="aws_s3_bucket.s3_bucket_example"];
+  }
+}
